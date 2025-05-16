@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Fasa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Portofolio Fasa</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Pengalaman</a></li>
+                <li><a href="#">Skill</a></li>
+                <li><a href="#">Sertifikat</a></li>
+                <li class="menu-icon"><a href="#">☰</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="left-column">
+            <h1>Pengalaman</h1>
+            <div class="experience-item">
+                <h3>Lomba MTQ</h3>
+                <p>Saya pernah mengikuti lomba MTQ tingkat Kecamatan dan Kabupaten pada tahun 2018 & 2019.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Lomba Tari</h3>
+                <p>Saya pernah mengikuti lomba Menari tingkat Kecamatan pada tahun 2018.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Mengikuti Ekstra PMR</h3>
+                <p>Waktu SMP saya mengikuti kegiatan ekstra PMR.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Mengikuti Ekstra PMR</h3>
+                <p>Di SMKN 1 Ngawi saya mengikuti ekstra Paskibra.</p>
+            </div>
+        </section>
+        <section class="right-column">
+            <img src="path/to/your/image.jpg" alt="Foto Pengalaman">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Fasa Ayu Fitria Ningsih</p>
+    </footer>
+</body>
+</html>
+<style>
+    body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: #222; /* Contoh warna latar belakang gelap */
+    color: #eee; /* Contoh warna teks terang */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 1.5em;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-icon {
+    display: none; /* Sembunyikan ikon menu default */
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    padding: 2em;
+    gap: 2em; /* Jarak antara kolom */
+}
+
+.left-column {
+    flex: 1; /* Mengambil sebagian besar ruang */
+}
+
+.right-column {
+    flex: 1;
+}
+
+.right-column img {
+    width: 100%;
+    height: auto;
+    display: block; /* Mencegah spasi ekstra di bawah gambar */
+    border-radius: 8px; /* Contoh sudut gambar yang melengkung */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+}
+
+.experience-item {
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #555; /* Garis pemisah antar pengalaman */
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+h3 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    color: #ddd;
+}
+
+/* Responsive Design (Contoh sederhana untuk layar kecil) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Tata letak satu kolom pada layar kecil */
+    }
+
+    nav ul {
+        display: none; /* Sembunyikan menu default pada layar kecil */
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px; /* Sesuaikan dengan tinggi header */
+        left: 0;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+    }
+
+    nav li {
+        margin: 0;
+        padding: 1em 0;
+        border-bottom: 1px solid #555;
+    }
+
+    nav li:last-child {
+        border-bottom: none;
+    }
+
+    nav.open ul {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block; /* Tampilkan ikon menu pada layar kecil */
+    }
+}
+</style>
